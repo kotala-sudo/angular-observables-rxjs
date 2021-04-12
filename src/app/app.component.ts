@@ -10,15 +10,12 @@ import { interval, Observable, pipe } from "rxjs";
 export class AppComponent {
   constructor() {}
 
-ngOnInit(){
-  interval(1000)
-}
-  // ngOnInit() {
-  //   interval(1000)
-  //     .pipe(
-  //       take(5),
-  //       map(v => Date.now())
-  //     )
-  //     .subscribe(value => console.log("Subscriber: " + value));
-  // }
+  ngOnInit() {
+    interval(1000)
+      .pipe(
+        take(5),
+        map(v => Date.now())
+      )
+      .subscribe(value => console.log("Subscriber: " + value));
+  }
 }
