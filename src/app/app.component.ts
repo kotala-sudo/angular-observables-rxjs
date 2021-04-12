@@ -1,4 +1,4 @@
-import { Component, VERSION } from "@angular/core";
+import { Component } from "@angular/core";
 import { map, filter, take } from "rxjs/operators";
 import { interval, Observable, pipe } from "rxjs";
 
