@@ -10,10 +10,6 @@ import { interval, pipe } from "rxjs";
 export class AppComponent {
   constructor() {}
 
-  hello(){
-    console.log("hello");
-  }
-
   ngOnInit() {
     interval(1000)
       .pipe(
