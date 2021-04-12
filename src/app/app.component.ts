@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { map, filter, take } from "rxjs/operators";
-import { interval, Observable, pipe } from "rxjs";
+import { interval, pipe } from "rxjs";
 
 @Component({
   selector: "my-app",
