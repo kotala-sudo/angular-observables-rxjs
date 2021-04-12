@@ -13,7 +13,7 @@ export class AppComponent {
   ngOnInit() {
     interval(1000)
       .pipe(
-        take(5),
+        take(3),
         map(v => Date.now())
       )
       .subscribe(value => console.log("Subscriber: " + value));
