@@ -3,11 +3,11 @@
   <h3>(Please check the console)</h3>
 </div>
 <div>
-  <p><strong>interval</strong> - a RxJS operator that creates an observable that emits sequential numbers every
+  <p><strong>interval</strong> - a RxJS operator that creates an <strong>observable</strong> that emits sequential numbers every
     specified interval of time<br>
     <a href="https://rxjs.dev/api/index/function/interval">https://rxjs.dev/api/index/function/interval</a>
   </p>
-  <p>The interval operator is emitting a number a every second</p>
+  <p>The interval operator emits a number a every second</p>
 </div>
 <div>
   <p><strong>pipe</strong> - A pipe operator is a function that takes an Observable as its input and returns another
@@ -15,10 +15,10 @@
   <p>The pipe operator is being called to take the values emitted by interval and transform them further</p>
 </div>
 <div>
-  <p><strong>take</strong> - an operator thta emits only the first count values emitted by the source
+  <p><strong>take</strong> - an operator that emits only the first count values emitted by the source
     <br><a href="https://rxjs.dev/api/operators/take">https://rxjs.dev/api/operators/take</a>
   </p>
-  <p>The <strong>take</strong> operator will only take the first three values emitted in the stream</p>
+  <p>The <strong>take(5)</strong> operator will only take the first five values emitted in the stream</p>
 </div>
 <div>
   <p><strong>map</strong> - an operator that applies a given project function to each value emitted by the source
@@ -29,5 +29,5 @@
 
 </div>
 <div>
-  <p><strong>subscribe</strong> - this function is used to subscribe to the observable return by pipe opeator and use the value by logging it onto the console.</p>
+  <p><strong>subscribe</strong> - this function is used to subscribe to the observable returned by the pipe opeator and use the value by logging it onto the console.</p>
 </div>
