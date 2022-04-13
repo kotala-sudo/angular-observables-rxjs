@@ -14,6 +14,7 @@ export class AppComponent {
     interval(1000)
       .pipe(
         take(3),
+        filter(x => x%2 == 0),
         map(v => Date.now())
       )
       .subscribe(value => console.log("Subscriber: " + value));

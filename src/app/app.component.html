@@ -3,31 +3,89 @@
   <h3>(Please check the console)</h3>
 </div>
 <div>
-  <p><strong>interval</strong> - a RxJS operator that creates an <strong>observable</strong> that emits sequential numbers every
-    specified interval of time<br>
-    <a href="https://rxjs.dev/api/index/function/interval">https://rxjs.dev/api/index/function/interval</a>
+  <p>
+    <strong>interval</strong> - a RxJS operator that creates an
+    <strong>observable</strong> that emits sequential numbers every specified
+    interval of time<br />
+    <a href="https://rxjs.dev/api/index/function/interval"
+      >https://rxjs.dev/api/index/function/interval</a
+    >
   </p>
-  <p>The interval operator emits a number a every second</p>
-</div>
-<div>
-  <p><strong>pipe</strong> - A pipe operator is a function that takes an Observable as its input and returns another
-    Observable. It is a pure operation: the previous Observable stays unmodified.</p>
-  <p>The pipe operator is being called to take the values emitted by interval and transform them further</p>
-</div>
-<div>
-  <p><strong>take</strong> - an operator that emits only the first count values emitted by the source
-    <br><a href="https://rxjs.dev/api/operators/take">https://rxjs.dev/api/operators/take</a>
+  <p>
+    The <strong>interval(1000) </strong> emits a number a every 1000
+    milliseconds i.e. every one second)
   </p>
-  <p>The <strong>take(5)</strong> operator will only take the first five values emitted in the stream</p>
 </div>
 <div>
-  <p><strong>map</strong> - an operator that applies a given project function to each value emitted by the source
-    Observable, and emits the resulting values as an Observable <br>
-    <a href="https://rxjs.dev/api/operators/map">https://rxjs.dev/api/operators/map</a>
+  <p>
+    <strong>pipe</strong> - A pipe operator is a function that takes an
+    Observable as its input and returns another Observable. It is a pure
+    operation: the previous Observable stays unmodified.
   </p>
-  <p>The <strong>map</strong> operator is taking the output of the take operator generating the date values in milliseconds the time that elapsed since January 1, 1970 00:00:00 UTC.</p>
-
+  <p>
+    The pipe operator is being called to take the values emitted by interval and
+    transform them further.
+  </p>
+  <p>
+    <strong>(op1(), op2(), op3(), op4());</strong> this allows you to pipe
+    operations in sequence one after the other. The output of op1( ) becomes the
+    input for op2( ) and so on.
+  </p>
 </div>
 <div>
-  <p><strong>subscribe</strong> - this function is used to subscribe to the observable returned by the pipe opeator and use the value by logging it onto the console.</p>
+  <p>
+    <strong>take</strong> - an operator that emits only the first count values
+    emitted by the source <br /><a href="https://rxjs.dev/api/operators/take"
+      >https://rxjs.dev/api/operators/take</a
+    >
+  </p>
+  <p>
+    The <strong>take(5)</strong> operator will only take the first five values
+    emitted in the stream
+  </p>
+</div>
+<div>
+  <p>
+    <strong>filter</strong>- operator that filters items emitted by the source
+    Observable by only emitting those that satisfy a specified predicate.
+  </p>
+  <p>
+    <strong>filter(x => x%2 == 0)</strong> will ensure that it filters only even
+    numbers
+  </p>
+  <p>
+    <a href="https://rxjs.dev/api/operators/filter"
+      >https://rxjs.dev/api/operators/filter</a
+    >
+  </p>
+</div>
+<div>
+  <p>
+    <strong>map</strong> - an operator that applies a given project function to
+    each value emitted by the source Observable, and emits the resulting values
+    as an Observable <br />
+    <a href="https://rxjs.dev/api/operators/map"
+      >https://rxjs.dev/api/operators/map</a
+    >
+  </p>
+  <p>
+    The <strong>map</strong> operator is taking the output of the take operator
+    generating the date values in milliseconds the time that elapsed since
+    January 1, 1970 00:00:00 UTC.
+  </p>
+</div>
+<div>
+  <p>
+    <strong>subscribe</strong> - this function is used to subscribe to the
+    observable returned by the pipe opeator and use the value by logging it onto
+    the console.
+  </p>
+</div>
+<div>
+  <strong>
+    You can read more about other RxJS operators here:
+    <a href="https://rxjs.dev/guide/operators"
+      >https://rxjs.dev/guide/operators</a
+    >
+  </strong>
 </div>
